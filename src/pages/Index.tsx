@@ -1,8 +1,30 @@
 import Navbar from '../components/Navbar';
 import Logo from '../components/Logo';
 import { ArrowRight, GamepadIcon, Users, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
+  const games = [
+    {
+      id: 'food-slicer',
+      title: 'Food Slicer',
+      description: 'Slice your way through various foods in this exciting arcade game!',
+      image: '/lovable-uploads/9d9020be-e867-4fa5-86b4-21fbb9b1aedc.png'
+    },
+    {
+      id: 'alt-earth',
+      title: 'Alt Earth',
+      description: 'A Megaman-inspired platformer with unique twists and challenges.',
+      image: '/placeholder.svg'
+    },
+    {
+      id: 'eish-potholes',
+      title: 'Eish Potholes',
+      description: 'Manage road repairs and keep traffic flowing in this strategic game.',
+      image: '/placeholder.svg'
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
@@ -33,12 +55,22 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-pixel text-primary mb-12 text-center">Our Games</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((game) => (
-              <div key={game} className="bg-black p-6 rounded-lg hover:transform hover:scale-105 transition-transform">
-                <div className="h-48 bg-glitch-500/20 rounded-lg mb-4"></div>
-                <h3 className="text-xl font-pixel text-white mb-2">Game Title {game}</h3>
-                <p className="text-gray-400">A brief description of the game goes here.</p>
-              </div>
+            {games.map((game) => (
+              <Link 
+                key={game.id} 
+                to={`/game/${game.id}`}
+                className="bg-black p-6 rounded-lg hover:transform hover:scale-105 transition-transform"
+              >
+                <div className="h-48 bg-glitch-500/20 rounded-lg mb-4 overflow-hidden">
+                  <img 
+                    src={game.image} 
+                    alt={game.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-pixel text-white mb-2">{game.title}</h3>
+                <p className="text-gray-400">{game.description}</p>
+              </Link>
             ))}
           </div>
         </div>
