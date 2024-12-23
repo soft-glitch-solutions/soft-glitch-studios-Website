@@ -29,7 +29,7 @@ const games = {
   'eish-potholes': {
     title: 'Eish Potholes',
     description: 'Take on the role of a road maintenance crew as you repair roads and manage traffic flow. Keep the city moving!',
-    image: '/eishpotholes.png',
+    image: '/lovable-uploads/eishpotholes.png',
     features: [
       'Strategic road repair gameplay',
       'Traffic management mechanics',
@@ -40,7 +40,7 @@ const games = {
   'eco-chain': {
     title: 'EcoChain',
     description: 'Restore balance to ecosystems by introducing species, managing resources, and overcoming challenges. Achieve ecological harmony!',
-    image: '/ecochain.png', // Replace with your EcoChain logo or game image
+    image: '/lovable-uploads/ecochain.png', // Replace with your EcoChain logo or game image
     features: [
       'Modular biomes with dynamic gameplay',
       'Species and resource management',
