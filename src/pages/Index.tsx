@@ -22,11 +22,21 @@ const Index = () => {
       id: 'eish-potholes',
       title: 'Eish Potholes',
       description: 'Manage road repairs and keep traffic flowing in this strategic game.',
-      image: '/placeholder.svg'
+      image: '/eishpotholes.png'
+    },
+    {
+      id: 'eco-chain',
+      title: 'EcoChain',
+      description: 'Restore balance to ecosystems by introducing species and managing resources.',
+      image: '/ecochain.png' // Replace with EcoChain's image
+    },
+    {
+      id: 'sewer-cleaner',
+      title: 'Sewer Cleaner',
+      description: 'Dive into city sewers to clean clogs and face lurking challenges below.',
+      image: '/placeholder.svg' // Replace with Sewer Cleaner’s image
     }
   ];
-
-  // ... keep existing code (sections content)
 
   return (
     <div className="min-h-screen bg-black">

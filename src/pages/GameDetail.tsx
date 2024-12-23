@@ -29,12 +29,34 @@ const games = {
   'eish-potholes': {
     title: 'Eish Potholes',
     description: 'Take on the role of a road maintenance crew as you repair roads and manage traffic flow. Keep the city moving!',
-    image: '/placeholder.svg',
+    image: '/eishpotholes.png',
     features: [
       'Strategic road repair gameplay',
       'Traffic management mechanics',
       'Multiple road types',
       'Time management challenges'
+    ]
+  },
+  'eco-chain': {
+    title: 'EcoChain',
+    description: 'Restore balance to ecosystems by introducing species, managing resources, and overcoming challenges. Achieve ecological harmony!',
+    image: '/ecochain.png', // Replace with your EcoChain logo or game image
+    features: [
+      'Modular biomes with dynamic gameplay',
+      'Species and resource management',
+      'Real-time ecosystem updates',
+      'Cooperative or solo gameplay'
+    ]
+  },
+  'sewer-cleaner': {
+    title: 'Sewer Cleaner',
+    description: 'Dive into the depths of the city to clean clogged sewers and fight off strange creatures lurking below. Keep the city’s lifeline flowing!',
+    image: '/placeholder.svg', // Replace with your Sewer Cleaner image
+    features: [
+      'Strategic cleaning challenges',
+      'Dynamic obstacle navigation',
+      'Unique tools and upgrades',
+      'Survival elements in dark depths'
     ]
   }
 };
