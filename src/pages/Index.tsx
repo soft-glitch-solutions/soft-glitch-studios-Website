@@ -22,13 +22,13 @@ const Index = () => {
       id: 'eish-potholes',
       title: 'Eish Potholes',
       description: 'Manage road repairs and keep traffic flowing in this strategic game.',
-      image: '/eishpotholes.png'
+      image: '/lovable-uploads/eishpotholes.png'
     },
     {
       id: 'eco-chain',
       title: 'EcoChain',
       description: 'Restore balance to ecosystems by introducing species and managing resources.',
-      image: '/ecochain.png' // Replace with EcoChain's image
+      image: '/lovable-uploads/ecochain.png' // Replace with EcoChain's image
     },
     {
       id: 'sewer-cleaner',
