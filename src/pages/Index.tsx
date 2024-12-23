@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Logo from '../components/Logo';
 import { ArrowRight, GamepadIcon, Users, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -24,6 +25,8 @@ const Index = () => {
       image: '/placeholder.svg'
     }
   ];
+
+  // ... keep existing code (sections content)
 
   return (
     <div className="min-h-screen bg-black">
@@ -116,6 +119,8 @@ const Index = () => {
           </a>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
